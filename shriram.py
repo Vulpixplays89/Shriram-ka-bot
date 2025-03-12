@@ -27,7 +27,7 @@ def keep_alive():
 def handle_message(message):
     # Create an inline keyboard with the desired link
     markup = InlineKeyboardMarkup()
-    button = InlineKeyboardButton("CREATE YOUR NEW 🆔", url="https://99exch.io/auth/login?to=/")
+    button = InlineKeyboardButton("𝐂𝐑𝐄𝐀𝐓𝐄 𝐘𝐎𝐔𝐑 𝐍𝐄𝐖 🆔", url="https://99exch.io/auth/login?to=/")
     markup.add(button)
 
     # Send the same message with the inline button
