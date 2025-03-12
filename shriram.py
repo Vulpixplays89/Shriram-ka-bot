@@ -36,4 +36,11 @@ def handle_message(message):
 # Run the bot
 keep_alive()
 print("Bot is running...")
-bot.polling()
+import time
+
+while True:
+    try:
+        bot.polling(none_stop=True, timeout=60)
+    except Exception as e:
+        print(f"Error: {e}")
+        time.sleep(5)  # Wait 5 seconds before retrying
